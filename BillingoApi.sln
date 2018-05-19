@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingoApi", "BillingoApi\BillingoApi.csproj", "{839577B5-EEB3-4FFF-8D8C-28DDC50BBBFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingoApi.Test", "BillingoApi.Test\BillingoApi.Test.csproj", "{A4338DAD-905F-439B-8365-ABFB8BEECAC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{839577B5-EEB3-4FFF-8D8C-28DDC50BBBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{839577B5-EEB3-4FFF-8D8C-28DDC50BBBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{839577B5-EEB3-4FFF-8D8C-28DDC50BBBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4338DAD-905F-439B-8365-ABFB8BEECAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4338DAD-905F-439B-8365-ABFB8BEECAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4338DAD-905F-439B-8365-ABFB8BEECAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4338DAD-905F-439B-8365-ABFB8BEECAC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
