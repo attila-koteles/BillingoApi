@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Attila Köteles</Authors>
+    <Company />
+    <Description>A library to interact with the invoicing api of www.billingo.hu</Description>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage />
   </PropertyGroup>
 
   <ItemGroup>
