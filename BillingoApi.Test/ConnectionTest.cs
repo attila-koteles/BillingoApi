@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using BillingoApi;
+using BillingoApi.Core;
 
 namespace BillingoApi.Test
 {

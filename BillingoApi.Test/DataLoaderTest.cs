@@ -1,8 +1,8 @@
-﻿using BillingoApi.Models;
+﻿using BillingoApi.Core;
+using BillingoApi.Models;
 using Moq;
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -18,7 +18,7 @@ namespace BillingoApi.Test
 
             var mock = new Mock<Connection>("", "");
             mock
-                .Setup(connection => connection.GetAsync(Connection.ApiEndpoint + "/invoices/blocks?page=1&max_per_page=50"))
+                .Setup(connection => connection.GetAsync("/invoices/blocks?page=1&max_per_page=50"))
                 .Returns(Task.FromResult(expectedBlockResults));
 
             dataloader = new DataLoader<Block>(mock.Object, "/invoices/blocks");

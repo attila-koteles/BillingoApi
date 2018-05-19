@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BillingoApi
+namespace BillingoApi.Core
 {
     public class DataLoader<T>
     {

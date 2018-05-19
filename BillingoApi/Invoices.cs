@@ -1,14 +1,14 @@
-﻿using BillingoApi.Models;
+﻿using BillingoApi.Core;
+using BillingoApi.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BillingoApi
 {
     public class Invoices
     {
-        Connection connection;
+        readonly Connection connection;
 
         public Invoices(string publicKey, string privateKey)
         {

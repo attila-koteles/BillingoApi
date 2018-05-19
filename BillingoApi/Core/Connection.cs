@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BillingoApi
+namespace BillingoApi.Core
 {
     public class Connection
     {
