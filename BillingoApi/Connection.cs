@@ -12,7 +12,7 @@ namespace BillingoApi
     public class Connection
     {
         string publicKey;
-        string privateKey;
+        readonly string privateKey;
 
         const int LeeWay = 60;
         public const string ApiEndpoint = "https://www.billingo.hu/api";

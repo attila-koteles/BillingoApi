@@ -33,7 +33,7 @@ namespace BillingoApi.Models
         public double NetTotal { get; set; }
         public string TypeString { get; set; }
         public Client Client { get; set; }
-        public IList<Item> Items { get; }
+        public List<Item> Items { set; get; }
         public Block Block { get; set; }
         public Payment PaymentMethod { get; set; }
     }

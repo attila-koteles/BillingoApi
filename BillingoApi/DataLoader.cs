@@ -12,13 +12,13 @@ namespace BillingoApi
         Connection connection;
         public const int MaxPerPage = 50;
         readonly string serviceEndpoint;
-        readonly Dictionary<string, string> queryParameters;
+
+        public Dictionary<string, string> QueryParameters { get; set; } = new Dictionary<string, string>();
 
         public DataLoader(Connection connection, string serviceEndpoint)
         {
             this.connection = connection;
             this.serviceEndpoint = serviceEndpoint;
-            this.queryParameters = new Dictionary<string, string>();
         }
 
         private async Task<string> ReadJsonFromServiceEndpoint(int page, int limit)
@@ -32,12 +32,10 @@ namespace BillingoApi
             };
 
             // Add our extra parameters
-            foreach (var qp in queryParameters)
+            foreach (var qp in QueryParameters)
                 parameters.Add($"{qp.Key}={qp.Value}");
 
-            return await connection.GetAsync(
-                Connection.ApiEndpoint +
-                serviceEndpoint + "?" + string.Join("&", parameters));
+            return await connection.GetAsync($"{serviceEndpoint}?{string.Join("&", parameters)}");
         }
 
         private JsonSerializer GetCamelCaseSerializer()
@@ -59,11 +57,6 @@ namespace BillingoApi
             var tokens = jo.SelectTokens("$.data[*].attributes");
             var serializer = GetCamelCaseSerializer();
             return tokens.Select(token => token.ToObject<T>(serializer)).ToList();
-        }
-
-        public void AddQueryParameter(string parameter, string value)
-        {
-            queryParameters[parameter] = value;
         }
 
         public async Task<List<T>> FetchPageAsync(int page, int limit)
