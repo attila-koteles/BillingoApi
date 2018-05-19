@@ -35,12 +35,9 @@ namespace BillingoApi
             foreach (var qp in queryParameters)
                 parameters.Add($"{qp.Key}={qp.Value}");
 
-            var response = await connection.GetClient().GetAsync(
+            return await connection.GetAsync(
                 Connection.ApiEndpoint +
                 serviceEndpoint + "?" + string.Join("&", parameters));
-
-            response.EnsureSuccessStatusCode();
-            return await response.Content.ReadAsStringAsync();
         }
 
         private JsonSerializer GetCamelCaseSerializer()

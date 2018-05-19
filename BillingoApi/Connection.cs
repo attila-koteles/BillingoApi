@@ -40,7 +40,7 @@ namespace BillingoApi
             return client;
         }
 
-        public async Task<string> GetAsync(string url)
+        public virtual async Task<string> GetAsync(string url)
         {
             return await GetClient().GetStringAsync(ApiEndpoint + url);
         }
