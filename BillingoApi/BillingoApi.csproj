@@ -6,8 +6,11 @@
     <Authors>Attila Köteles</Authors>
     <Company />
     <Description>A library to interact with the invoicing api of www.billingo.hu</Description>
-    <RepositoryType>git</RepositoryType>
+    <RepositoryType>github</RepositoryType>
     <NeutralLanguage />
+    <RepositoryUrl>https://github.com/attila-koteles/BillingoApi</RepositoryUrl>
+    <PackageTags>billingo, api</PackageTags>
+    <PackageProjectUrl>https://github.com/attila-koteles/BillingoApi</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

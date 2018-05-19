@@ -14,6 +14,19 @@ This library targets [.NET Standard 2.0](https://github.com/dotnet/standard/blob
 *   Xamarin.Android 7.5
 *   Universal Windows Platform vNext
 
+## Installing via NuGet
+
+The easiest way to install BillingoApi is via [NuGet](https://www.nuget.org/packages/BillingoApi/).
+
+In Visual Studio's [Package Manager Console](http://docs.nuget.org/docs/start-here/using-the-package-manager-console),
+enter the following command:
+
+    Install-Package BillingoApi
+
+You can also install it from the command line
+
+    dotnet add package BillingoApi
+
 ## Usage
 
 For now this library is focusing on Query features, reading Blocks / Invoices. You are welcome to contribute with additional features.
