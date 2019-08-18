@@ -18,7 +18,7 @@ namespace BillingoApi.Test
 
             var mock = new Mock<Connection>("", "");
             mock
-                .Setup(connection => connection.GetAsync("/invoices/blocks?page=1&max_per_page=50"))
+                .Setup(connection => connection.GetAsync("/invoices/blocks?page=1&max_per_page=20"))
                 .Returns(Task.FromResult(expectedBlockResults));
 
             dataloader = new DataLoader<Block>(mock.Object, "/invoices/blocks");
@@ -27,7 +27,7 @@ namespace BillingoApi.Test
         [Fact]
         public void FetchAllAsyncTest()
         {
-            var blocks = dataloader.FetchAllAsync(50).Result;
+            var blocks = dataloader.FetchAllAsync(20).Result;
             Assert.Equal(2, blocks.Count);
 
             var expected = new List<Block>

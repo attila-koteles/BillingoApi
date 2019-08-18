@@ -6,22 +6,16 @@ namespace BillingoApi.Models
     public class Invoice
     {
         public long Uid { get; set; }
-
         public long BlockUid { get; set; }
-
 
         public string InvoiceNo { get; set; }
         public string ConnectedInvoiceNo { get; set; }
 
         public DateTimeOffset Date { get; set; }
-
         public DateTimeOffset FulfillmentDate { get; set; }
-
         public DateTimeOffset DueDate { get; set; }
 
-        // we can't use "decimal" in Realm, and double is not good enough so we convert to long (by rounding it)
         public decimal Total { get; set; }
-
         public decimal TotalPaid { get; set; }
 
         public string Comment { get; set; }

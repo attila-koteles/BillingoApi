@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,6 +11,11 @@
     <RepositoryUrl>https://github.com/attila-koteles/BillingoApi</RepositoryUrl>
     <PackageTags>billingo, api</PackageTags>
     <PackageProjectUrl>https://github.com/attila-koteles/BillingoApi</PackageProjectUrl>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <PackageReleaseNotes>Billingo changed the max fetch count from 50 to 20</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>

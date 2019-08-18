@@ -10,7 +10,7 @@ namespace BillingoApi.Core
     public class DataLoader<T>
     {
         Connection connection;
-        public const int MaxPerPage = 50;
+        public const int MaxPerPage = 20;
         readonly string serviceEndpoint;
 
         public Dictionary<string, string> QueryParameters { get; set; } = new Dictionary<string, string>();
