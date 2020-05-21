@@ -28,7 +28,6 @@ namespace BillingoApi.Models
         public string TypeString { get; set; }
         public Client Client { get; set; }
         public List<Item> Items { set; get; }
-        public Block Block { get; set; }
         public Payment PaymentMethod { get; set; }
     }
 }

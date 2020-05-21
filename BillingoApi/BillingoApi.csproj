@@ -11,11 +11,10 @@
     <RepositoryUrl>https://github.com/attila-koteles/BillingoApi</RepositoryUrl>
     <PackageTags>billingo, api</PackageTags>
     <PackageProjectUrl>https://github.com/attila-koteles/BillingoApi</PackageProjectUrl>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <PackageReleaseNotes>New function: Invoices.FetchOneInvoice
-New optional parameters for Invoices.QueryAsync</PackageReleaseNotes>
-    <Version>1.0.2</Version>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <PackageReleaseNotes>Billingo removed the "Block" section from the Invoice resultset</PackageReleaseNotes>
+    <Version>1.1.0</Version>
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
   </PropertyGroup>
 
